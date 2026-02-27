@@ -1,4 +1,3 @@
-
- t    ## Hi there 👋
+## Hi there 👋
 
 ### site live at - https://knowerselsa.github.io/KnowerselSA/
