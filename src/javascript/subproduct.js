@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("nav").classList.add("scrolled");
     if ("scrollRestoration" in history) history.scrollRestoration = "manual";
     window.scrollTo(0, 0);
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);

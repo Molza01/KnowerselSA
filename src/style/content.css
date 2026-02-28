@@ -1,5 +1,8 @@
 * {
     font-family: "Quattrocento Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -7,17 +10,20 @@ html {
     scroll-behavior: smooth;
 }
 
-.nav-container {
-    background-color: white;
-}
-
 #back {
-  filter: brightness(0) !important;
+    transform: rotate(-90deg);
+    pointer-events: auto;
 }
 
+
+/* Remove hover border from arrow link */
+.arrow-link:hover {
+    border-bottom: none !important;
+    border-image: none !important;
+}
 
 .list_item a {
-    color: black !important;
+    color: white !important;
     font-size: 22px !important;
     font-weight: bold !important;
 }
@@ -134,19 +140,19 @@ header {
 .page2 {
     background-color: rgb(0, 0, 0);
     color: white;
-    /* height: 100vh; */
-    display: block;
+    min-height: 100vh;
+    /* display: block; */
     scroll-snap-align: start;
     /* This is what creates the snap effect */
     scroll-snap-stop: always;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .swiper {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0 !important;
-    /* Removed top/bottom margins to prevent alignment issues */
+    
 }
 
 .swiper-wrapper {
@@ -191,6 +197,7 @@ header {
     width: 380px;
     height: 580px;
     aspect-ratio: 16 / 9;
+    margin-top: 50px;
     /* default */
     /* Add this if your videos include Shorts */
     border: 1px solid white;
@@ -428,4 +435,27 @@ header {
         padding: 1rem;
         font-size: 14px;
     }
+
+    /* Nav-slider img */
+    
 }
+
+/* FORCE NAVBAR FULL BLACK */
+.nav {
+    background-color: black !important;
+    width: 100%;
+}
+
+.nav-container {
+    background-color: black !important;
+    width: 100%;
+}
+#nav {
+    background: rgba(17, 17, 17, 0.3) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+header {
+    background-color: black !important;
+}
+
