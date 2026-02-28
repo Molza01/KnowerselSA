@@ -457,6 +457,11 @@ border-radius: 50%;
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
+ 
+}
+.checkout-link:hover .big-text {
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(105deg, #6666FF, #FF4750, #6666FF) 1;
 }
 
 .checkout-link .arrow {
