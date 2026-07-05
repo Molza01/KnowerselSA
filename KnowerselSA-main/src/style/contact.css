@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
+
+/* Contact Page Styles */
+
+/* =================== GLOBAL =================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #FFFFFF 85%, #262626);
+}
+
+/* =================== MAIN =================== */
+.main-content {
+  padding: 70px 20px 40px;
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =================== TITLE =================== */
+.title {
+  background-image: linear-gradient(to right, #826CF5 25%, #6FEA90);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+/* =================== LAYOUT =================== */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.left-content {
+  flex: 1;
+  text-align: center;
+}
+
+.description,
+.contact-info {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.email-link {
+  color: black;
+  text-decoration: underline;
+}
+
+.email-link:hover {
+  color: #7c4dff;
+}
+
+/* =================== DIVIDER =================== */
+.divider {
+  width: 2px;
+  background-color: #666;
+  align-self: stretch;
+}
+
+/* =================== FORM =================== */
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 30px;
+  border: 1px solid black;
+  background-color: rgba(232, 232, 232, 0.8);
+  font-family: inherit;
+  font-size: 18px;
+  outline: none;
+}
+
+.form-textarea {
+  min-height: 200px;
+  border-radius: 20px;
+  resize: none;
+}
+
+/* =================== BUTTON =================== */
+.send-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  margin: 10px auto 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-button:hover {
+  transform: scale(1.05);
+}
+
+.send-txt {
+  font-size: 18px;
+}
+
+.arrow img {
+  width: 20px;
+}
+
+/* =================== NAVBAR =================== */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  /* padding: 0 20px 0 0; */
+  padding: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+
+}
+
+#nav.scrolled {
+  background: rgba(17, 17, 17, 0.3);
+  /* semi transparent */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* subtle depth */
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+
+/* 🔥 HEADER LOGO */
+.nav-left-section {
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.nav-left-section img {
+  width: auto;
+  height: 48px;
+  /* max-width: 140px; */
+  max-height: 48px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.nav-left-section img:hover {
+  transform: scale(1.2);
+}
+
+/* NAV LINKS */
+.nav_right-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav_right-list li {
+  padding: 0 1rem;
+}
+
+.nav_right-list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.list_item:hover {
+  transform: scale(1.12);
+  transition: all 0.3s ease;
+
+}
+
+.list_item a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  padding-bottom: 2px;
+
+}
+
+
+.list_item a:hover {
+  border-radius: 2px;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(105deg, #6666FF, #FF4750, #6666FF) 1;
+
+}
+
+/* =================== FOOTER =================== */
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(to right, #D2005A, #6666FF) 1;
+
+}
+
+.footer-container {
+  min-height: 40px;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    ".    socials   ."
+    "logo .         copyright";
+  row-gap: 0.5rem;
+}
+
+.logo {
+  grid-area: logo;
+  justify-self: start;
+}
+
+.footer-container .logo {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  margin-left: 0.5rem;
+}
+
+.footer-container .logo img {
+  max-width: 140px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.menu {
+  grid-area: menu;
+
+}
+
+.menu ul,
+.socials ul {
+  font-size: 18px;
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu ul {
+
+  gap: 4rem;
+  justify-content: space-around;
+
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: rgb(212, 212, 212);
+}
+
+.menu-item:hover {
+  transform: scale(1.12);
+  transition: all 0.2s ease;
+}
+
+.socials ul {
+  gap: 2rem;
+}
+
+.socials {
+  grid-area: socials;
+  align-items: center;
+
+}
+
+.socials-items img {
+  width: 24px;
+  height: 24px;
+
+
+}
+
+.socials-items img:hover {
+  filter: brightness(10);
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
+
+.copyright {
+  /* margin-top: 2rem; */
+  margin-bottom: 5px;
+  color: white;
+  /* padding: 1.2rem; */
+  grid-area: copyright;
+  text-align: center;
+  font-size: 14px;
+  justify-self: end;
+  align-self: end;
+  font-family: Quattrocento Sans, sans-serif;
+
+}
+
+/* FOOTER STYLE END */
+
+/* =================== TABLET & MOBILE LAYOUT =================== */
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .nav-container {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .nav-left-section {
+    padding: 5px;
+    margin-left: 0.5rem;
+  }
+
+  /* make sure page scrolls */
+  html,
+  body {
+    overflow-y: auto;
+  }
+
+  .container {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .title {
+    font-size: 34px;
+    margin-bottom: 32px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .left-content {
+    margin-top: 0;
+    padding-right: 0;
+  }
+
+  .description,
+  .contact-info {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    line-height: 1.5;
+  }
+
+  .contact-info a {
+    display: block;
+    margin-top: 5px;
+  }
+
+
+  .divider {
+    width: 100%;
+    height: 2px;
+    margin: 16px 0;
+  }
+
+  .right-content {
+    padding-left: 0;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 80%;
+    max-width: 100%;
+    font-size: 16px;
+    padding: 10px 16px;
+    align-self: center;
+  }
+
+  .send-button {
+    width: 100%;
+    max-width: 260px;
+    gap: 24px;
+  }
+
+  .send-txt {
+    font-size: 18px;
+  }
+
+  /* FOOTER – EXACT SAME MOBILE GRID AS HOME PAGE */
+  footer {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .footer-container {
+    padding: 10px;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "socials"
+      "logo"
+      "copyright";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* gap: 10px; */
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .footer-container .logo {
+    justify-self: center;
+  }
+
+  .socials {
+    grid-area: socials;
+    justify-self: center;
+    align-self: center;
+    margin-top: 15px;
+  }
+
+  .socials ul {
+    padding: 0;
+    /* gap: 1.5rem; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    justify-self: center;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/* FIX: Center arrow image inside Send button */
+.send-button .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button .arrow img {
+  display: block;
+}
